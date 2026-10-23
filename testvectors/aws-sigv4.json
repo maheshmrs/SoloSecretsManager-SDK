@@ -1,0 +1,42 @@
+{
+  "access_key_id": "AKIDEXAMPLE",
+  "cases": [
+    {
+      "name": "sts GetCallerIdentity bound to the server",
+      "method": "POST",
+      "url": "https://sts.amazonaws.com/",
+      "region": "us-east-1",
+      "service": "sts",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
+        "X-Ssm-Server-Id": "vault.example.com"
+      },
+      "body": "Action=GetCallerIdentity\u0026Version=2011-06-15",
+      "signed": {
+        "Authorization": "AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20261016/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token;x-ssm-server-id, Signature=11d6b81884774daa6220099ecfc0edf6ec669980a57d1c09a35dd6fdba41aa00",
+        "X-Amz-Date": "20261016T010203Z",
+        "X-Amz-Security-Token": "session-token-example"
+      }
+    },
+    {
+      "name": "kms Decrypt",
+      "method": "POST",
+      "url": "https://kms.eu-west-1.amazonaws.com/",
+      "region": "eu-west-1",
+      "service": "kms",
+      "headers": {
+        "Content-Type": "application/x-amz-json-1.1",
+        "X-Amz-Target": "TrentService.Decrypt"
+      },
+      "body": "{\"KeyId\":\"arn:aws:kms:eu-west-1:111122223333:key/k\",\"CiphertextBlob\":\"AAEC\",\"EncryptionAlgorithm\":\"RSAES_OAEP_SHA_256\"}",
+      "signed": {
+        "Authorization": "AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20261016/eu-west-1/kms/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token;x-amz-target, Signature=22ac76c29a5d94d750522c0bd687db8ee5b0e27fc75ec6fbffeab6aabdf4aadb",
+        "X-Amz-Date": "20261016T010203Z",
+        "X-Amz-Security-Token": "session-token-example"
+      }
+    }
+  ],
+  "secret_access_key": "wJalrXUtnFEMI/K7MDENG+bPxRfiCYEXAMPLEKEY",
+  "session_token": "session-token-example",
+  "time": "2026-10-16T01:02:03Z"
+}

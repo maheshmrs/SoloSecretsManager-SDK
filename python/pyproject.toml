@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solosecretsmanager"
+version = "0.1.0"
+description = "Read secrets from a SoloSecretsManager server in CI jobs (SEC-MACH-02)"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+dependencies = ["cryptography>=42"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

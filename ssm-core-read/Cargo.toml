@@ -1,0 +1,12 @@
+[package]
+name = "ssm-core-read"
+version = "0.1.0"
+description = "SoloSecretsManager decrypt subset: envelope format and key unwrap (LIC-02)"
+license = "Apache-2.0"
+edition = "2024"
+rust-version = "1.98"
+
+[dependencies]
+aes-gcm = "0.11.1"
+getrandom = "0.4.3"
+zeroize = "1.9.1"

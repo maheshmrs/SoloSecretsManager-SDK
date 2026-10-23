@@ -1,0 +1,12 @@
+{
+  "name": "@solosecretsmanager/sdk",
+  "version": "0.1.0",
+  "description": "Read secrets from a SoloSecretsManager server in CI jobs (SEC-MACH-02)",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node --test" },
+  "files": ["index.js", "cloud.js", "index.d.ts", "LICENSE"]
+}

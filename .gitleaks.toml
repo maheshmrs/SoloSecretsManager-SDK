@@ -1,0 +1,15 @@
+# Secret scanning config (QA-G-07). Extends the default rules.
+[extend]
+useDefault = true
+
+# Public test vectors only: never add real secrets here.
+[allowlist]
+description = "Published test values: RFC 4226/6238 test keys, an RFC 4648 sample, the Azurite emulator key"
+regexes = [
+  '''^GEZDGNBVGY3TQOJQ(GEZDGNBVGY3TQOJQ)*$''', # base32("12345678901234567890"), RFC 4226 / 6238
+  '''^MZXW6$''',                               # base32("foo"), RFC 4648
+  # Azurite's published development account key (Microsoft docs), used only against the local emulator.
+  '''^Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==$''',
+]
+# Generated contract vectors (QA-G-03): random keys from core/ssm-core/tests/machine_vectors.rs, never real secrets.
+paths = ['''^testvectors/machine-v1\.json$''']

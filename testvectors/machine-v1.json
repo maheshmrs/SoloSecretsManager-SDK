@@ -1,0 +1,472 @@
+{
+  "attestation": {
+    "attestation": {
+      "identity_public_key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEb_A7lJJBzh2t1DUZ5pYOCoW0GmmgXDKBA6orzhWUyhY8T3U6Vb8B3FP2wLDH7ueLQMb_fSWpbiKCuYnO9xwUSg",
+      "signature": "MEUCICc0Xn6olIXtY71PVntrC1SHz26ljTunuvpqq7EPPcF8AiEAy4YEguzE4MdkdJRkerUAqYXkDDORR4nMF-UUzp2AWCk",
+      "statement": "eyJpc3N1ZWRfYXQiOjEsInB1cnBvc2UiOiJzc20tdGxzLWF0dGVzdGF0aW9uLXYxIiwic2VydmVyX2lkIjoidmF1bHQudGVzdCIsInRsc19waW5zIjpbImNlcnQtcGluLTEiLCJjZXJ0LXBpbi0yIl19"
+    },
+    "conn_pin": "cert-pin-2",
+    "pin": "-FeuTtbjTjN2Guolyq7j_lShWWD7ktzWOjdasSHesqk",
+    "pins": [
+      "cert-pin-1",
+      "cert-pin-2"
+    ],
+    "server_id": "vault.test"
+  },
+  "attestation_reject": [
+    {
+      "attestation": {
+        "identity_public_key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEb_A7lJJBzh2t1DUZ5pYOCoW0GmmgXDKBA6orzhWUyhY8T3U6Vb8B3FP2wLDH7ueLQMb_fSWpbiKCuYnO9xwUSg",
+        "signature": "MEUCICc0Xn6olIXtY71PVntrC1SHz26ljTunuvpqq7EPPcF8AiEAy4YEguzE4MdkdJRkerUAqYXkDDORR4nMF-UUzp2AWCk",
+        "statement": "eyJpc3N1ZWRfYXQiOjEsInB1cnBvc2UiOiJzc20tdGxzLWF0dGVzdGF0aW9uLXYxIiwic2VydmVyX2lkIjoidmF1bHQudGVzdCIsInRsc19waW5zIjpbImNlcnQtcGluLTEiLCJjZXJ0LXBpbi0yIl19"
+      },
+      "conn_pin": "cert-pin-1",
+      "name": "pin of another identity",
+      "pin": "WgenI8eVaDCuLmvg73GzmRFi9epC0tVLhpzyFnNNeNM",
+      "server_id": "vault.test"
+    },
+    {
+      "attestation": {
+        "identity_public_key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEb_A7lJJBzh2t1DUZ5pYOCoW0GmmgXDKBA6orzhWUyhY8T3U6Vb8B3FP2wLDH7ueLQMb_fSWpbiKCuYnO9xwUSg",
+        "signature": "MEUCIQCShzJ-IubjF2M6EbgcCnAqi-HvHk88ZMjhi-HNQi8uLQIgf145MBXciM8E8u0wu9AWXLZWvDZozfojtki9U9FXAxM",
+        "statement": "eyJpc3N1ZWRfYXQiOjEsInB1cnBvc2UiOiJzc20tdGxzLWF0dGVzdGF0aW9uLXYxIiwic2VydmVyX2lkIjoidmF1bHQudGVzdCIsInRsc19waW5zIjpbImNlcnQtcGluLTEiLCJjZXJ0LXBpbi0yIl19"
+      },
+      "conn_pin": "cert-pin-1",
+      "name": "signed by another identity",
+      "pin": "-FeuTtbjTjN2Guolyq7j_lShWWD7ktzWOjdasSHesqk",
+      "server_id": "vault.test"
+    },
+    {
+      "attestation": {
+        "identity_public_key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEb_A7lJJBzh2t1DUZ5pYOCoW0GmmgXDKBA6orzhWUyhY8T3U6Vb8B3FP2wLDH7ueLQMb_fSWpbiKCuYnO9xwUSg",
+        "signature": "MEUCICc0Xn6olIXtY71PVntrC1SHz26ljTunuvpqq7EPPcF8AiEAy4YEguzE4MdkdJRkerUAqYXkDDORR4nMF-UUzp2AWCk",
+        "statement": "eyJpc3N1ZWRfYXQiOjEsInB1cnBvc2UiOiJzc20tdGxzLWF0dGVzdGF0aW9uLXYxIiwic2VydmVyX2lkIjoidmF1bHQudGVzdCIsInRsc19waW5zIjpbImNlcnQtcGluLTEiLCJjZXJ0LXBpbi0yIl19"
+      },
+      "conn_pin": "cert-pin-1",
+      "name": "another server",
+      "pin": "-FeuTtbjTjN2Guolyq7j_lShWWD7ktzWOjdasSHesqk",
+      "server_id": "other.test"
+    },
+    {
+      "attestation": {
+        "identity_public_key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEb_A7lJJBzh2t1DUZ5pYOCoW0GmmgXDKBA6orzhWUyhY8T3U6Vb8B3FP2wLDH7ueLQMb_fSWpbiKCuYnO9xwUSg",
+        "signature": "MEUCICc0Xn6olIXtY71PVntrC1SHz26ljTunuvpqq7EPPcF8AiEAy4YEguzE4MdkdJRkerUAqYXkDDORR4nMF-UUzp2AWCk",
+        "statement": "eyJpc3N1ZWRfYXQiOjEsInB1cnBvc2UiOiJzc20tdGxzLWF0dGVzdGF0aW9uLXYxIiwic2VydmVyX2lkIjoidmF1bHQudGVzdCIsInRsc19waW5zIjpbImNlcnQtcGluLTEiLCJjZXJ0LXBpbi0yIl19"
+      },
+      "conn_pin": "evil-pin",
+      "name": "connection certificate not attested",
+      "pin": "-FeuTtbjTjN2Guolyq7j_lShWWD7ktzWOjdasSHesqk",
+      "server_id": "vault.test"
+    },
+    {
+      "attestation": {
+        "identity_public_key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEb_A7lJJBzh2t1DUZ5pYOCoW0GmmgXDKBA6orzhWUyhY8T3U6Vb8B3FP2wLDH7ueLQMb_fSWpbiKCuYnO9xwUSg",
+        "signature": "MEUCICc0Xn6olIXtY71PVntrC1SHz26ljTunuvpqq7EPPcF8AiEAy4YEguzE4MdkdJRkerUAqYXkDDORR4nMF-UUzp2AWCk",
+        "statement": "eyJpc3N1ZWRfYXQiOjEsInB1cnBvc2UiOiJzc20tdGxzLWF0dGVzdGF0aW9uLXYxIiwic2VydmVyX2lkIjoidmF1bHQudGVzdCIsInRsc19waW5zIjpbImNlcnQtcGluLTEiLCJldmlsLXBpbiJdfQ"
+      },
+      "conn_pin": "evil-pin",
+      "name": "statement changed after signing",
+      "pin": "-FeuTtbjTjN2Guolyq7j_lShWWD7ktzWOjdasSHesqk",
+      "server_id": "vault.test"
+    },
+    {
+      "attestation": {
+        "identity_public_key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEb_A7lJJBzh2t1DUZ5pYOCoW0GmmgXDKBA6orzhWUyhY8T3U6Vb8B3FP2wLDH7ueLQMb_fSWpbiKCuYnO9xwUSg",
+        "signature": "MEUCIQDvgDmtTNZUSrn7OHaRuH50joRZc6VKpOLJuxYZoF8GBwIgb25PQd-Nfu1SmP-91xol6MzjIO6Fir2WEpaqSDaDsOM",
+        "statement": "eyJpc3N1ZWRfYXQiOjEsInB1cnBvc2UiOiJzb21ldGhpbmctZWxzZSIsInNlcnZlcl9pZCI6InZhdWx0LnRlc3QiLCJ0bHNfcGlucyI6WyJjZXJ0LXBpbi0xIiwiY2VydC1waW4tMiJdfQ"
+      },
+      "conn_pin": "cert-pin-1",
+      "name": "wrong purpose",
+      "pin": "-FeuTtbjTjN2Guolyq7j_lShWWD7ktzWOjdasSHesqk",
+      "server_id": "vault.test"
+    }
+  ],
+  "ci_key": "tv4Rpiqg4LpnDq4m9PpD7RMcYoDIPRxRB-JbV8mwlEAdr5uGDNhlNbGZpkscDgey",
+  "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+  "exchange": {
+    "items": [
+      {
+        "created_at": "",
+        "deleted_at": null,
+        "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+        "id": "01010101-0101-0101-0101-010101010101",
+        "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnA",
+        "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRV",
+        "revision": 3,
+        "size": 0,
+        "type": "api_key",
+        "updated_at": ""
+      },
+      {
+        "created_at": "",
+        "deleted_at": null,
+        "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+        "id": "02020202-0202-0202-0202-020202020202",
+        "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8Hy1CeUtVfZZW6Iyz5NT1rQzO8JqSWteMJgVc78ApMta7o_xRcgYGHjVVRM_5zxGcGXwccYn_MLE0yYEukiO8fRGe-S5fXHrAyc-YiA",
+        "payload": "U1NNAQEHu83UKz0svqJ4Z2A88QITMUthq5_6HkA1H0Ff5q0c-dMZdr8iJqZ-c00r5JYUyM7sz0NMnV1bXYoW4LUd8oNqeatVgI6RTOHuhpGrKpcKA_zEVW2MUTF_zBolLDNI7i2WZ3Z3",
+        "revision": 1,
+        "size": 0,
+        "type": "api_key",
+        "updated_at": ""
+      }
+    ],
+    "revision": 7,
+    "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nQ"
+  },
+  "expected": {
+    "DATABASE_PASSWORD": "hunter2",
+    "STRIPE_KEY": "sk_test_ünïcødé ✓"
+  },
+  "reject": [
+    {
+      "ci_key": "tv4Rpiqg4LpnDq4m9PpD7RMcYoDIPRxRB-JbV8mwlEAdr5uGDNhlNbGZpkscDgey",
+      "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+      "exchange": {
+        "items": [
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "01010101-0101-0101-0101-010101010101",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnA",
+            "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRU",
+            "revision": 3,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          },
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "02020202-0202-0202-0202-020202020202",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8Hy1CeUtVfZZW6Iyz5NT1rQzO8JqSWteMJgVc78ApMta7o_xRcgYGHjVVRM_5zxGcGXwccYn_MLE0yYEukiO8fRGe-S5fXHrAyc-YiA",
+            "payload": "U1NNAQEHu83UKz0svqJ4Z2A88QITMUthq5_6HkA1H0Ff5q0c-dMZdr8iJqZ-c00r5JYUyM7sz0NMnV1bXYoW4LUd8oNqeatVgI6RTOHuhpGrKpcKA_zEVW2MUTF_zBolLDNI7i2WZ3Z3",
+            "revision": 1,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          }
+        ],
+        "revision": 7,
+        "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nQ"
+      },
+      "name": "tampered payload"
+    },
+    {
+      "ci_key": "tv4Rpiqg4LpnDq4m9PpD7RMcYoDIPRxRB-JbV8mwlEAdr5uGDNhlNbGZpkscDgey",
+      "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+      "exchange": {
+        "items": [
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "01010101-0101-0101-0101-010101010101",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnQ",
+            "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRV",
+            "revision": 3,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          },
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "02020202-0202-0202-0202-020202020202",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8Hy1CeUtVfZZW6Iyz5NT1rQzO8JqSWteMJgVc78ApMta7o_xRcgYGHjVVRM_5zxGcGXwccYn_MLE0yYEukiO8fRGe-S5fXHrAyc-YiA",
+            "payload": "U1NNAQEHu83UKz0svqJ4Z2A88QITMUthq5_6HkA1H0Ff5q0c-dMZdr8iJqZ-c00r5JYUyM7sz0NMnV1bXYoW4LUd8oNqeatVgI6RTOHuhpGrKpcKA_zEVW2MUTF_zBolLDNI7i2WZ3Z3",
+            "revision": 1,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          }
+        ],
+        "revision": 7,
+        "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nQ"
+      },
+      "name": "tampered item key"
+    },
+    {
+      "ci_key": "tv4Rpiqg4LpnDq4m9PpD7RMcYoDIPRxRB-JbV8mwlEAdr5uGDNhlNbGZpkscDgey",
+      "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+      "exchange": {
+        "items": [
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "01010101-0101-0101-0101-010101010101",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnA",
+            "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRV",
+            "revision": 3,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          },
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "02020202-0202-0202-0202-020202020202",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8Hy1CeUtVfZZW6Iyz5NT1rQzO8JqSWteMJgVc78ApMta7o_xRcgYGHjVVRM_5zxGcGXwccYn_MLE0yYEukiO8fRGe-S5fXHrAyc-YiA",
+            "payload": "U1NNAQEHu83UKz0svqJ4Z2A88QITMUthq5_6HkA1H0Ff5q0c-dMZdr8iJqZ-c00r5JYUyM7sz0NMnV1bXYoW4LUd8oNqeatVgI6RTOHuhpGrKpcKA_zEVW2MUTF_zBolLDNI7i2WZ3Z3",
+            "revision": 1,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          }
+        ],
+        "revision": 7,
+        "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nA"
+      },
+      "name": "tampered environment key"
+    },
+    {
+      "ci_key": "tv4Rpiqg4LpnDq4m9PpD7RMcYoDIPRxRB-JbV8mwlEAdr5uGDNhlNbGZpkscDgey",
+      "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+      "exchange": {
+        "items": [
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "01010101-0101-0101-0101-010101010101",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnA",
+            "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRV",
+            "revision": 2,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          },
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "02020202-0202-0202-0202-020202020202",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8Hy1CeUtVfZZW6Iyz5NT1rQzO8JqSWteMJgVc78ApMta7o_xRcgYGHjVVRM_5zxGcGXwccYn_MLE0yYEukiO8fRGe-S5fXHrAyc-YiA",
+            "payload": "U1NNAQEHu83UKz0svqJ4Z2A88QITMUthq5_6HkA1H0Ff5q0c-dMZdr8iJqZ-c00r5JYUyM7sz0NMnV1bXYoW4LUd8oNqeatVgI6RTOHuhpGrKpcKA_zEVW2MUTF_zBolLDNI7i2WZ3Z3",
+            "revision": 1,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          }
+        ],
+        "revision": 7,
+        "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nQ"
+      },
+      "name": "replayed revision"
+    },
+    {
+      "ci_key": "tv4Rpiqg4LpnDq4m9PpD7RMcYoDIPRxRB-JbV8mwlEAdr5uGDNhlNbGZpkscDgey",
+      "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+      "exchange": {
+        "items": [
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "02020202-0202-0202-0202-020202020202",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnA",
+            "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRV",
+            "revision": 3,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          },
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "01010101-0101-0101-0101-010101010101",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8Hy1CeUtVfZZW6Iyz5NT1rQzO8JqSWteMJgVc78ApMta7o_xRcgYGHjVVRM_5zxGcGXwccYn_MLE0yYEukiO8fRGe-S5fXHrAyc-YiA",
+            "payload": "U1NNAQEHu83UKz0svqJ4Z2A88QITMUthq5_6HkA1H0Ff5q0c-dMZdr8iJqZ-c00r5JYUyM7sz0NMnV1bXYoW4LUd8oNqeatVgI6RTOHuhpGrKpcKA_zEVW2MUTF_zBolLDNI7i2WZ3Z3",
+            "revision": 1,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          }
+        ],
+        "revision": 7,
+        "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nQ"
+      },
+      "name": "swapped item ids"
+    },
+    {
+      "ci_key": "tv4Rpiqg4LpnDq4m9PpD7RMcYoDIPRxRB-JbV8mwlEAdr5uGDNhlNbGZpkscDgey",
+      "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+      "exchange": {
+        "items": [
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "01010101-0101-0101-0101-010101010101",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnA",
+            "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRV",
+            "revision": 3,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          },
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "09090909-0909-0909-0909-090909090909",
+            "item_key": "U1NNAQHoZFdUVYpZnIDWbK3JP3qZqFHZ0ll9mmJsZg1kSMCikc-dI_MQBFsc_vqncY5r6ov-3uiJn7pPWd3jFSW9OLsMZR-nx1kBMB479b3pVj6NIOaAo5ufyFdsT8g_4g",
+            "payload": "U1NNAQHfrh-9QJUuQnDgvVV3rsQOv4gfztcQdjDs7nmnGlNSTM0FDsxrjY7MANr9ED4T2AH2rm-yfafRHgpIXF_p5VxZ1mS_M6JyZexA",
+            "revision": 1,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          }
+        ],
+        "revision": 7,
+        "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nQ"
+      },
+      "name": "item from another environment key"
+    },
+    {
+      "ci_key": "tv4Rpiqg4LpnDq4m9PpD7RMcYoDIPRxRB-JbV8mwlEAdr5uGDNhlNbGZpkscDgey",
+      "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+      "exchange": {
+        "items": [
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "01010101-0101-0101-0101-010101010101",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnA",
+            "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRV",
+            "revision": 3,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          },
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "03030303-0303-0303-0303-030303030303",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8udxAv1qscYbRkE72UHi4WmtWGUKFplPJf8nJe0jD41fiG7j-FkbCPr1fzIHRsw8jGUoxLqKTxdh-Be7qhY9So0n0Ujke1pcEiqzmEQ",
+            "payload": "U1NNAQHgbuqqyvOvzxmfBoaZyHw4uUnnX0GPBiiarpNnlfVEUYi6wbpSoSkx_blFb319bBS3ZgWOFnusrx7Xj4B07OYpdYUVTjRvyPqttxS26xlzhydzHKQ_aOSDUA",
+            "revision": 1,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          }
+        ],
+        "revision": 7,
+        "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nQ"
+      },
+      "name": "duplicate names"
+    },
+    {
+      "ci_key": "tv4Rpiqg4LpnDq4m9PpD7RMcYoDIPRxRB-JbV8mwlEAdr5uGDNhlNbGZpkscDgey",
+      "environment_id": "e1e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+      "exchange": {
+        "items": [
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "01010101-0101-0101-0101-010101010101",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnA",
+            "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRV",
+            "revision": 3,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          },
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "02020202-0202-0202-0202-020202020202",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8Hy1CeUtVfZZW6Iyz5NT1rQzO8JqSWteMJgVc78ApMta7o_xRcgYGHjVVRM_5zxGcGXwccYn_MLE0yYEukiO8fRGe-S5fXHrAyc-YiA",
+            "payload": "U1NNAQEHu83UKz0svqJ4Z2A88QITMUthq5_6HkA1H0Ff5q0c-dMZdr8iJqZ-c00r5JYUyM7sz0NMnV1bXYoW4LUd8oNqeatVgI6RTOHuhpGrKpcKA_zEVW2MUTF_zBolLDNI7i2WZ3Z3",
+            "revision": 1,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          }
+        ],
+        "revision": 7,
+        "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nQ"
+      },
+      "name": "other environment"
+    },
+    {
+      "ci_key": "JduUQhaRpMvciRhiWKFmJFaG9CZn-LY4HydOTPvfcPuYD1kYa7neGJN5Qr0s8pJX",
+      "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+      "exchange": {
+        "items": [
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "01010101-0101-0101-0101-010101010101",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnA",
+            "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRV",
+            "revision": 3,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          },
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "02020202-0202-0202-0202-020202020202",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8Hy1CeUtVfZZW6Iyz5NT1rQzO8JqSWteMJgVc78ApMta7o_xRcgYGHjVVRM_5zxGcGXwccYn_MLE0yYEukiO8fRGe-S5fXHrAyc-YiA",
+            "payload": "U1NNAQEHu83UKz0svqJ4Z2A88QITMUthq5_6HkA1H0Ff5q0c-dMZdr8iJqZ-c00r5JYUyM7sz0NMnV1bXYoW4LUd8oNqeatVgI6RTOHuhpGrKpcKA_zEVW2MUTF_zBolLDNI7i2WZ3Z3",
+            "revision": 1,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          }
+        ],
+        "revision": 7,
+        "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nQ"
+      },
+      "name": "wrong CI key"
+    },
+    {
+      "ci_key": "tv4Rpiqg4LpnDq4m9PpD7RMcYoDJPRxRB-JbV8mwlEAdr5uGDNhlNbGZpkscDgey",
+      "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+      "exchange": {
+        "items": [
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "01010101-0101-0101-0101-010101010101",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8EHieUDfe7lg-Rhq2cne1Wvn_ydvRSWoE_jSfOGcnaEhU5eDbcEaJ-2cIBOI3mqjOpaag9PaAb2Fr5-kaRvTQ9XDdXf8nvtsdAqExnA",
+            "payload": "U1NNAQH7tjeRmv8NiO45otIsNF5NkFb_gvFlLGW1g43Mpm0AducOF1hYhWIn6vBrFGyVmkVbK19ZJDiklpWdD5ug2DE-fOVzhchGo6DMzaufkv7TLax9dqBJVF8cEHRV",
+            "revision": 3,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          },
+          {
+            "created_at": "",
+            "deleted_at": null,
+            "environment_id": "e0e0e0e0-e0e0-e0e0-e0e0-e0e0e0e0e0e0",
+            "id": "02020202-0202-0202-0202-020202020202",
+            "item_key": "U1NNAQGweFk-NDL8TpOJKw37V_h8Hy1CeUtVfZZW6Iyz5NT1rQzO8JqSWteMJgVc78ApMta7o_xRcgYGHjVVRM_5zxGcGXwccYn_MLE0yYEukiO8fRGe-S5fXHrAyc-YiA",
+            "payload": "U1NNAQEHu83UKz0svqJ4Z2A88QITMUthq5_6HkA1H0Ff5q0c-dMZdr8iJqZ-c00r5JYUyM7sz0NMnV1bXYoW4LUd8oNqeatVgI6RTOHuhpGrKpcKA_zEVW2MUTF_zBolLDNI7i2WZ3Z3",
+            "revision": 1,
+            "size": 0,
+            "type": "api_key",
+            "updated_at": ""
+          }
+        ],
+        "revision": 7,
+        "wrapped_key": "U1NNAQG2_hGmKqDgumcOrib0-kPtzimufPVx1ifjpq4_DtFQIaB66Hvaug-kf6r3_GjASMiK5ikTnS8Mr3YsP3c0bWmVRhJvxZkVV7dhx02YeK3KrZJ7HiGArJNXG6h7nQ"
+      },
+      "name": "CI key with wrong bytes"
+    }
+  ]
+}

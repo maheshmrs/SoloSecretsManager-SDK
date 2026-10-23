@@ -1,0 +1,7 @@
+target/
+node_modules/
+__pycache__/
+.gradle/
+build/
+bin/
+obj/
